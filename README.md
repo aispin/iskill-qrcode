@@ -60,4 +60,4 @@ node scripts/qr.mjs selfcheck                    # 编码器回归自检
 编码器与 `iskill-generate-sponsors` 的外链二维码同源（复制维护）；
 完整实现说明与踩坑实录见 [SKILL.md](SKILL.md)。
 
-> 共享真源：本仓库 `scripts/lib/qrcode.mjs` 为唯一真源（改文件须同 commit 升文件头 `@iskill-version`；消费方副本用 [iskill-dep-sync](https://github.com/aispin/iskill-dep-sync) 同步）。
+> 共享真源：本仓库 `scripts/lib/qrcode.mjs` 为唯一真源（改文件须同 commit 升文件头 `@iskill-version`；消费方副本用 [iskill-utils](https://github.com/aispin/iskill-utils) 同步）。

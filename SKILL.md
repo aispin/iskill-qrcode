@@ -120,6 +120,6 @@ encode 可用。外部验证复用 Chrome `BarcodeDetector`（`agent-browser` �
 （声明见各仓库 `package.json` 的 `iskillDeps`）。
 
 - **改本文件必须同一 commit 升 `@iskill-version`**（bug 升 patch、加能力升 minor）
-- 升版后用 iskill-dep-sync 同步各消费方：
-  `node ~/.workbuddy/skills/iskill-dep-sync/scripts/skill-deps.mjs check ~/WorkBuddy/ISkills/*`
+- 升版后用 iskill-utils 同步各消费方：
+  `node ~/.workbuddy/skills/iskill-utils/scripts/skill-deps.mjs check ~/WorkBuddy/ISkills/*`
   → 对报 `[UPDATE]` 的仓库逐个 `sync`
