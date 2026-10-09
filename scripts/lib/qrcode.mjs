@@ -1,8 +1,8 @@
 /**
  * @iskill-source iskill-qrcode/scripts/lib/qrcode.mjs
- * @iskill-version 1.0.0
+ * @iskill-version 1.0.1
  *
- * qrcode.mjs —— 零依赖二维码编码器（Node ≥ 18 标准库）
+ * qrcode.mjs —— 零依赖二维码编码器（Node ≥ 24 标准库）
  *
  * 产出供「外链赞助方式」（PayPal 等）展示的二维码：整卡可点（target=_blank），
  * 码面可扫，两条路都能到达同一个网址。

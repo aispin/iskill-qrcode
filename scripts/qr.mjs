@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * qr.mjs —— iskill-qrcode CLI（零依赖，Node ≥ 18）
+ * qr.mjs —— iskill-qrcode CLI（零依赖，Node ≥ 24）
  *
  *   node qr.mjs encode <text|-> [选项]      生成风格化 SVG
  *   node qr.mjs decode <图片...>            解码图片里的二维码
