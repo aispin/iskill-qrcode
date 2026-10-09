@@ -1,0 +1,9 @@
+{
+  "name": "iskill-qrcode",
+  "private": true,
+  "type": "module",
+  "description": "二维码生成+解码二合一 skill；scripts/lib/qrcode.mjs 为共享真源（iskillDeps 消费方请用 skill-deps 同步）",
+  "iskillShared": [
+    { "path": "scripts/lib/qrcode.mjs", "description": "零依赖 QR 编码器（qrMatrix/qrSvg/qrSvgDataUri/qrSelfCheck），Node ≥ 18" }
+  ]
+}

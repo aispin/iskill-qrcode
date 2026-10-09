@@ -112,3 +112,14 @@ encode 可用。外部验证复用 Chrome `BarcodeDetector`（`agent-browser` �
 ## 安装（AI skill）
 
 对 agent 说：**请帮我安装 Skill：aispin/iskill-qrcode**
+
+## 共享真源
+
+本仓库是 `scripts/lib/qrcode.mjs` 的**唯一真源**（零依赖 QR 编码器，文件头带
+`@iskill-source` / `@iskill-version` 戳）。iskill-generate-sponsors 等以 vendored 副本消费
+（声明见各仓库 `package.json` 的 `iskillDeps`）。
+
+- **改本文件必须同一 commit 升 `@iskill-version`**（bug 升 patch、加能力升 minor）
+- 升版后用 iskill-dep-sync 同步各消费方：
+  `node ~/.workbuddy/skills/iskill-dep-sync/scripts/skill-deps.mjs check ~/WorkBuddy/ISkills/*`
+  → 对报 `[UPDATE]` 的仓库逐个 `sync`
